@@ -16,5 +16,5 @@ Coffea version
 # Set up coffea via conda/mamba
 git clone git@github.com:hatakeyamak/LJAnalysis.git # one time operation
 cd LJAnalysis
-python macros/LeptonJetC.py 
+python macros/LeptonJetC.py SingleMuon_2018C
 ```
