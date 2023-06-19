@@ -17,7 +17,8 @@ from coffea import nanoevents, processor
 ## from coffea import hist as coffea_hist
 from coffea.lumi_tools import LumiMask
 from coffea.nanoevents.methods import vector
-import uproot3
+#KH import uproot3
+import uproot
 
 import os
 import sys
@@ -382,7 +383,8 @@ if __name__ == "__main__":
 
     ## Create output directories and output ROOT file
     if TEST: LABEL += '_TEST'
-    out_root = uproot3.recreate('plots/LeptonJetC_%s_%s.root' % (CAT, LABEL))
+    #KH out_root = uproot3.recreate('plots/LeptonJetC_%s_%s.root' % (CAT, LABEL))
+    out_root = uproot.recreate('plots/LeptonJetC_%s_%s.root' % (CAT, LABEL))
     if not os.path.exists('plots/png/LeptonJetC_%s_%s/' % (CAT, LABEL)):
         os.makedirs('plots/png/LeptonJetC_%s_%s/' % (CAT, LABEL))
 
